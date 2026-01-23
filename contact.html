@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, nofollow"/>
+<title>Ben Rosenfield — Contact</title><link rel="stylesheet" href="styles.css"/></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="brandwrap">
+      <a href="index.html" class="brand">BEN ROSENFIELD</a>
+      <div class="tagline">Digital Strategy &amp; Creative Production</div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="https://www.linkedin.com/in/brosenfield/" class="pill pill--icon" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.5 1s2.48 1.12 2.48 2.5zM0.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.1c.5-1 1.9-2.1 4-2.1 4.3 0 5.1 2.8 5.1 6.5V24h-4v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8.5z"/></svg></a>
+    </nav>
+  </header>
+
+<main id="main">
+  <section class="section">
+    <div class="section__head">
+      <h2>Contact Form</h2>
+      <p class="subhead">This form opens your email app with the message pre-filled to rosenfield@gmail.com (works without hosting).</p>
+    </div>
+
+    <form class="form" id="contactForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" />
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Send</button>
+        <a class="pill" href="mailto:rosenfield@gmail.com">Email directly</a>
+      </div>
+    </form>
+  </section>
+</main>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e) {{
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent(`Portfolio inquiry from ${{name || 'Website Visitor'}}`);
+    const body = encodeURIComponent(`Name: ${{name}}\nEmail: ${{email}}\nPhone: ${{phone}}\n\nMessage:\n${{message}}`);
+    window.location.href = `mailto:rosenfield@gmail.com?subject=${{subject}}&body=${{body}}`;
+  }});
+</script>
+</body></html>

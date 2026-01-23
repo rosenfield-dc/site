@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, nofollow"/>
+<title>Ben Rosenfield — The Digital Stage</title><link rel="stylesheet" href="styles.css"/></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="brandwrap">
+      <a href="index.html" class="brand">BEN ROSENFIELD</a>
+      <div class="tagline">Digital Strategy &amp; Creative Production</div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/brosenfield/" class="pill pill--icon" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.5 1s2.48 1.12 2.48 2.5zM0.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.1c.5-1 1.9-2.1 4-2.1 4.3 0 5.1 2.8 5.1 6.5V24h-4v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8.5z"/></svg></a>
+    </nav>
+  </header>
+
+<main id="main">
+  
+  <section class="cover-bleed">
+    <div class="project-cover" aria-label="Project cover image">
+      <img src="images/project-7.jpg" alt="The Digital Stage cover" />
+      <div class="cover-nav" aria-label="Project navigation">
+        <a href="project-6.html" aria-label="Previous project">←</a>
+        <a href="index.html" aria-label="Back to home">Portfolio</a>
+        <a href="project-8.html" aria-label="Next project">→</a>
+      </div>
+      <div class="cover-inner">
+        <div class="cover-max">
+          <p class="cover-kicker">Case Study</p>
+          <h1 class="cover-title"><span class="cover-title-box">The Digital Stage</span></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section" style="padding-top:22px;">
+      <div class="project-meta">
+        <h3>Summary</h3>
+        <p>In close partnership with the Executive Producer of Brand and the Vice President of Digital, I helped lead the creative and operational execution of the Kennedy Center’s <em>The Digital Stage</em>, shaping it into a flagship digital brand that expanded the institution’s reach through award-winning storytelling and large-scale audience growth.</p>
+        <div class="meta-row meta-row--stack">
+          <span><strong>Role •</strong> Creative Producer, Project Manager, Multimedia Lead</span>
+          <span><strong>Digital Brand •</strong> The Digital Stage — YouTube &amp; Social Storytelling</span>
+          <span><strong>Impact •</strong> Grew the channel to over one million followers and delivered Webby- and Anthem-recognized content</span>
+        </div>
+      
+      <section class="yt-rail" aria-label="YouTube playlist rail">
+        <div class="yt-player-wrap">
+          <iframe
+            id="yt-main-player"
+            title="YouTube video player"
+            class="yt-player"
+            src="https://www.youtube.com/embed/ftNsUDw6mec"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="yt-rail-strip" role="list" aria-label="Playlist videos">
+          <!-- Cards injected by JS -->
+        </div>
+      </section>
+
+      <style>
+        .yt-rail {
+          background: #0b0b0b;
+          color: #ffffff;
+          padding: 12px 0 0;
+          display: grid;
+          gap: 12px;
+        }
+        .yt-player-wrap {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          border-radius: 16px;
+          overflow: hidden;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: #000;
+        }
+        .yt-player {
+          width: 100%;
+          height: 100%;
+          border: 0;
+          display: block;
+        }
+        .yt-rail-strip {
+          display: flex;
+          gap: 12px;
+          overflow-x: auto;
+          padding: 6px 10px 12px;
+          scroll-snap-type: x mandatory;
+        }
+        .yt-rail-strip::-webkit-scrollbar { display: none; }
+        .yt-rail-strip { scrollbar-width: none; }
+        .yt-card {
+          flex: 0 0 260px;
+          scroll-snap-align: start;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 14px;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.02);
+          display: grid;
+          gap: 10px;
+          padding: 10px;
+          cursor: pointer;
+          transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+        .yt-card:hover {
+          transform: translateY(-2px);
+          border-color: rgba(255, 255, 255, 0.28);
+          background: rgba(255, 255, 255, 0.04);
+        }
+        .yt-card img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          display: block;
+        }
+        .yt-card-title {
+          font-size: 12px;
+          letter-spacing: .14em;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .yt-card.is-active {
+          border-color: rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 24px rgba(255, 255, 255, 0.18);
+        }
+        .yt-card:focus-visible {
+          outline: 2px solid #fff;
+          outline-offset: 3px;
+        }
+        @media (max-width: 700px) {
+          .yt-card { flex-basis: 200px; }
+          .yt-card-title { font-size: 11px; }
+        }
+      </style>
+
+      <script>
+        (function () {
+          var items = [
+            { id: "ftNsUDw6mec", title: "Loading title…" },
+            { id: "1sm_ruTMURY", title: "Loading title…" },
+            { id: "pjt3u2dkPCg", title: "Loading title…" },
+            { id: "0Ywg7c0sJ-M", title: "Loading title…" },
+            { id: "1UEA4Am1TnY", title: "Loading title…" },
+            { id: "BkKRCDIFauk", title: "Loading title…" }
+          ];
+
+          var strip = document.querySelector(".yt-rail-strip");
+          var player = document.getElementById("yt-main-player");
+          if (!strip || !player) return;
+
+          function setActive(button) {
+            var buttons = strip.querySelectorAll(".yt-card");
+            buttons.forEach(function (btn) { btn.classList.remove("is-active"); });
+            button.classList.add("is-active");
+          }
+
+          items.forEach(function (item, index) {
+            var btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "yt-card" + (index === 0 ? " is-active" : "");
+            btn.setAttribute("aria-label", "Play " + item.title);
+            btn.setAttribute("data-video-id", item.id);
+
+            var img = document.createElement("img");
+            img.src = "https://img.youtube.com/vi/" + item.id + "/hqdefault.jpg";
+            img.alt = item.title + " thumbnail";
+
+            var title = document.createElement("div");
+            title.className = "yt-card-title";
+            title.textContent = item.title;
+
+            btn.appendChild(img);
+            btn.appendChild(title);
+
+            btn.addEventListener("click", function () {
+              player.src = "https://www.youtube.com/embed/" + item.id;
+              setActive(btn);
+            });
+
+            btn.addEventListener("keydown", function (e) {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                btn.click();
+              }
+            });
+
+            strip.appendChild(btn);
+          });
+
+          var titlePromises = items.map(function (item) {
+            var url =
+              "https://www.youtube.com/oembed?url=" +
+              encodeURIComponent("https://www.youtube.com/watch?v=" + item.id) +
+              "&format=json";
+            return fetch(url)
+              .then(function (res) {
+                if (!res.ok) throw new Error("oEmbed failed");
+                return res.json();
+              })
+              .then(function (data) {
+                var titleText = data && data.title ? data.title : item.id;
+                var button = strip.querySelector(
+                  '.yt-card[data-video-id="' + item.id + '"]'
+                );
+                if (!button) return;
+                var titleEl = button.querySelector(".yt-card-title");
+                var imgEl = button.querySelector("img");
+                if (titleEl) titleEl.textContent = titleText;
+                if (imgEl) imgEl.alt = titleText + " thumbnail";
+                button.setAttribute("aria-label", "Play " + titleText);
+              })
+              .catch(function () {
+                return null;
+              });
+          });
+
+          Promise.all(titlePromises);
+        })();
+      </script>
+</div>
+
+    <div class="project-body project-body--stack">
+      <div class="panel">
+        <h3>Overview</h3>
+        <p>The Kennedy Center’s <em>The Digital Stage</em> is the institution’s primary digital brand, extending its mission beyond the physical campus and bringing performances, artist stories, and original programming to global audiences. Working alongside the Executive Producer of Brand and the Vice President of Digital, I served as the lead multimedia producer responsible for translating strategy into execution.</p>
+        <p>Together, we launched and grew the The Digital Stage YouTube channel into a platform with over one million subscribers. I focused on production leadership, storytelling execution, team management, and delivery pipelines, ensuring that creative vision, brand identity, and technical production aligned. The channel became known for its range of content, from intimate artist profiles to large-scale performance moments featuring artists such as Cynthia Erivo, Ben Folds, Dave Chappelle, and many others.</p>
+        <p>The work received widespread recognition, including Webby and Anthem Awards, establishing The Digital Stage as a respected media brand in the performing arts space.</p>
+      </div>
+      <div class="panel">
+        <h3>Details</h3>
+        <ul>
+          <li><strong>Role:</strong> Creative Producer and Project Manager working in collaboration with the Executive Producer of Brand and the Vice President of Digital to execute the vision, strategy, and growth of the The Digital Stage platform.</li>
+          <li><strong>Scope:</strong>
+            <ul>
+              <li>Launched and scaled the The Digital Stage YouTube channel to over one million followers</li>
+              <li>Led multimedia production execution while aligning with brand and digital leadership</li>
+              <li>Managed production workflows, schedules, and delivery pipelines</li>
+              <li>Oversaw storytelling pieces, artist features, and original digital series</li>
+              <li>Partnered with marketing and distribution teams to maximize reach and engagement</li>
+            </ul>
+          </li>
+          <li><strong>Team:</strong>
+            <ul>
+              <li>Executive Producer of Brand</li>
+              <li>Vice President of Digital</li>
+              <li>In-house producers, editors, animators, and social media teams</li>
+              <li>Artists, performers, and production partners</li>
+            </ul>
+          </li>
+          <li><strong>Impact:</strong>
+            <ul>
+              <li>Helped establish The Digital Stage as the Kennedy Center’s flagship digital brand</li>
+              <li>Expanded access to world-class performing arts content for global audiences</li>
+              <li>Delivered award-winning storytelling recognized by Webby and Anthem Awards</li>
+              <li>Supported growth to over one million subscribers and massive cumulative viewership</li>
+              <li>Built a sustainable, collaborative production model between brand, digital, and multimedia teams</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body></html>
